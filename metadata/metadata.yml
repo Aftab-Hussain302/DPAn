@@ -1,0 +1,16 @@
+metadata_version: 1
+name: Dual Path Attention Network for Single Image Super-Resolution (DPAN)
+description: Deep convolutional neural networks (CNNs) have recently made remarkable advances in single imagesuper-resolution (SISR). The CNN structures of most existing SISR methods are just based on residualstructures, dense structures, or their variants. However, these methods almost all adopt single-pathstructures, which makes them difficult to make full use of the complementary contextual informationof the different ways of feature extraction (e.g., residual and dense connections). In this paper, wedevelop a novel dual-path attention network, which includes the dual-path attention groups (DPAGs)with dual skip connections (DSCs), in order to combine the advantages of both residual and denseconnections for better SR performance. Each DPAG has several dual-path blocks (DPBs) and a pathattention fusion (PAF). The DPBs realize the structure of the dual-path topology, while the PAF canfurther improve the discriminative representation ability by a channel attention (CA) mechanism,adaptively fuse the complementary contextual information produced by the two paths, and stabilizethe network. Our DPAN can well pay attention to high-frequency information because each DSCcontains a local skip connection and an adaptively weighted global skip connection (AWGSC), whichcan further adaptively bypass low-frequency features. Extensive experimental results demonstrate thesuperiority of the proposed DPAN in terms of both quantitative metrics and visual quality, comparedwith the current state-of-the-art SISR methods. For instance, compared with recent typical methods,for Bicubic (BI) degradation on the difficult dataset Urban100, our DPAN achieved the best PSNR of33.22dBfor scale×2,29.20dBfor scale×3, and26.99dBfor scale×4, respectively.
+authors:
+- name: Zhiyong Huang
+  affiliations:
+  - name: North China Electric Power University
+- name: Wenbin Li
+  affiliations:
+  - name: North China Electric Power University, Beijing, China
+- name: Jinxin Li
+  affiliations:
+  - name: North China Electric Power University, Beijing, China
+- name: Dengwen Zhou
+  affiliations:
+  - name: North China Electric Power University, Beijing, China
